@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="form">
+
+        <h2>Functional points</h2>
+        <br>
+        <form name="InputArea">
+            <div class="column">
+                <div class="form-row">
+                    <div id="tablediv">
+                        <table>
+                            <br><br>
+                            <h2>Difficulty levels</h2><br>
+                            <tr>
+                                <th rowspan="2"></th>
+                            </tr>
+                            <tr>
+                                <th>Value</th>
+                                <th>Low</th>
+                                <th>Average</th>
+                                <th>High</th>
+                            </tr>
+                            <tr>
+                                <td>Internal Logical File</td>
+                                <td><input id="ilf" type="text" required></td>
+                                <td><label><input type="radio" name="ilf" value="7" checked />7</label></td>
+                                <td><label><input type="radio" name="ilf" value="10" />10</label></td>
+                                <td><label><input type="radio" name="ilf" value="15" />15</label></td>
+                            </tr>
+                            <tr>
+                                <td>External Interface File</td>
+                                <td><input id="eif" type="text" required></td>
+                                <td><label><input type="radio" name="eif" value="5" checked />5</label></td>
+                                <td><label><input type="radio" name="eif" value="7" />7</label></td>
+                                <td><label><input type="radio" name="eif" value="10" />10</label></td>
+                            </tr>
+                            <tr>
+                                <td>External Input</td>
+                                <td><input id="ei" type="text" required></td>
+                                <td><label><input type="radio" name="ei" value="3" checked />3</label></td>
+                                <td><label><input type="radio" name="ei" value="4" />4</label></td>
+                                <td><label><input type="radio" name="ei" value="6" />6</label></td>
+                            </tr>
+                            <tr>
+                                <td>External Output</td>
+                                <td><input id="eo" type="text" required></td>
+                                <td><label><input type="radio" name="eo" value="4" checked />4</label></td>
+                                <td><label><input type="radio" name="eo" value="5" />5</label></td>
+                                <td><label><input type="radio" name="eo" value="7" />7</label></td>
+                            </tr>
+                            <tr>
+                                <td>External Inquiry</td>
+                                <td><input id="eq" type="text" required></td>
+                                <td><label><input type="radio" name="eq" value="3" checked />3</label></td>
+                                <td><label><input type="radio" name="eq" value="4" />4</label></td>
+                                <td><label><input type="radio" name="eq" value="6" />9</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br><br><br>
+                <div id="tablediv">
+                    <table id="table">
+                       
+                    </table>
+                </div>
+                <br><br>
+
+                <div class="form-row">
+                    <label>Programming language:</label>
+                    <div class="custom-select" style="width:250px;">
+                        <select id="lang">
+                            <option value="320">Basic Assembler</option>
+                            <option value="320">Autocoder</option>
+                            <option value="296">Netron/CAP</option>
+                            <option value="213">Macro Assembler</option>
+                            <option value="128">C</option>
+                            <option value="128">Batch files DOS</option>
+                            <option value="107">Basic</option>
+                            <option value="107">Lotus macros</option>
+                            <option value="105">ALGOL</option>
+                            <option value="105">COBOL</option>
+                            <option value="105">FORTRAN</option>
+                            <option value="105">JOVIAL</option>
+                            <option value="105">Mixed programming languages</option>
+                            <option value="96">JCL</option>
+                            <option value="95">VPF</option>
+                            <option value="91">Pascal</option>
+                            <option value="91">COBOL (ANSI 85)</option>
+                            <option value="86">APS</option>
+                            <option value="81">Slogan</option>
+                            <option value="80">RPG</option>
+                            <option value="80">Modula-2</option>
+                            <option value="80">PL/1</option>
+                            <option value="80">Parallel Pascal</option>
+                            <option value="71">Fortran 95</option>
+                            <option value="71">Mantis</option>
+                            <option value="70">Sabretalk</option>
+                            <option value="69">Mapper</option>
+                            <option value="68">ColdFusion</option>
+                            <option value="67">Datastage</option>
+                            <option value="66">Ideal</option>
+                            <option value="64">Basic (ANSI)</option>
+                            <option value="64">FORTH</option>
+                            <option value="64">LISP</option>
+                            <option value="64">PROLOG</option>
+                            <option value="63">Powerhouse</option>
+                            <option value="61">Uniface</option>
+                            <option value="60">.NET</option>
+                            <option value="59">JSP</option>
+                            <option value="58">LOGO</option>
+                            <option value="58">C#</option>
+                            <option value="57">J2EE</option>
+                            <option value="56">Expanded LISP</option>
+                            <option value="56">RPG III</option>
+                            <option value="56">ASP</option>
+                            <option value="55">Java</option>
+                            <option value="54">JavaScript</option>
+                            <option value="53">C++</option>
+                            <option value="53">YACC</option>
+                            <option value="51">Culprit</option>
+                            <option value="51">Natural</option>
+                            <option value="50">KML</option>
+                            <option value="50">Visual Basic</option>
+                            <option value="50">REXX</option>
+                            <option value="49">Ada 95</option>
+                            <option value="47">PL/SQL</option>
+                            <option value="46">CICS</option>
+                            <option value="46">SIMULA</option>
+                            <option value="45">Taskmate</option>
+                            <option value="45">Focus</option>
+                            <option value="44">Web Scripts</option>
+                            <option value="42">Pacbase</option>
+                            <option value="40">Database languages</option>
+                            <option value="40">Clipper DB и dBase III</option>
+                            <option value="40">Informix</option>
+                            <option value="40">Oracle и SYBASE</option>
+                            <option value="39">Openroad</option>
+                            <option value="38">Access</option>
+                            <option value="38">VBSript</option>
+                            <option value="38">Advantage</option>
+                            <option value="37">PeopleSoft</option>
+                            <option value="37">Cool:Gen/IEF</option>
+                            <option value="36">DBase IV</option>
+                            <option value="35">Adoption support languages</option>
+                            <option value="34">FoxPro 2.5</option>
+                            <option value="32">APL</option>
+                            <option value="32">Static languages (SAS)</option>
+                            <option value="30">Maestro</option>
+                            <option value="29">DELPHI</option>
+                            <option value="29">Standard object-oriented languages</option>
+                            <option value="28">Powerbuilder</option>
+                            <option value="28">VB.Net</option>
+                            <option value="27">OBJECTIVE-C</option>
+                            <option value="23">Lotus Script</option>
+                            <option value="23">Oracle Developer /2000</option>
+                            <option value="21">Smalltalk</option>
+                            <option value="21">awk</option>
+                            <option value="21">EIFFEL</option>
+                            <option value="21">Shell-scripts (Perl)</option>
+                            <option value="20">Standard languages of the 4th generation</option>
+                            <option value="20">OR3 (4GL)</option>
+                            <option value="20">Application Builder</option>
+                            <option value="20">CORBA</option>
+                            <option value="20">Cristal Reports</option>
+                            <option value="20">Datatrieve</option>
+                            <option value="19">CLIPPER</option>
+                            <option value="18">ABAP (SAP)</option>
+                            <option value="15">HTML 3.0</option>
+                            <option value="13">Siebel Tools</option>
+                            <option value="13">SQL</option>
+                            <option value="13">Easytrieve+</option>
+                            <option value="11">SQL Forms</option>
+                            <option value="6">Excel</option>
+                            <option value="6">QUATTRO PRO</option>
+                            <option value="4">Icon creation languages</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <br><br>
+
+        <div class="column">
+            <div class="form-row">
+                <input type="button" name="CalculateButton" value="Calculate" onClick="updateDisplay()"
+                    style='width:250px;'>
+            </div>
+        </div>
+        <br><br>
+
+        <form NAME="DisplayArea">
+            <div class="column">
+                <div class="form-row">
+                    <label>Value Adjustment Factor: </label>
+                    <input type="text" name="vaf" style="width:250px;" disabled>
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Adjusted Function Point Count: </label>
+                    <input type="text" name="afps" style="width:250px;" disabled>
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Source Lines Code: </label>
+                    <input type="text" name="sloc" style="width:250px;" disabled>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>
