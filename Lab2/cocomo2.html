@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="form">
+
+        <h2>COCOMO Intermediate</h2>
+        <br>
+        <form name="InputArea">
+            <div class="column">
+                <div class="form-row">
+                    <label>KLOC:</label>
+                    <input type="text" name="KLOCEntry" onchange="KLOCValidate()" style="width:250px;">
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Project evaluation stage:</label>
+                    <div class="custom-select" style="width:250px;">
+                        <select id="type" onchange="buildTable2()">
+                            <option value="0">Select</option>
+                            <option value="1">Early Design</option>
+                            <option value="2">Post Architecture</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <br><br>
+        <div id="tablediv">
+            <table id="table1"></table>
+        </div>
+        <br><br><br>
+        <div id="tablediv">
+            <table id="table2"></table>
+        </div>
+        <br><br><br>
+        <div class="column">
+            <div class="form-row">
+                <input type="button" name="CalculateButton" value="Calculate" onClick="updateDisplay() "
+                    style='width:250px;'>
+            </div>
+        </div>
+        <br><br>
+
+        <form NAME="DisplayArea">
+            <div class="column">
+                <div class="form-row">
+                    <label>Labor intensity: </label>
+                    <input type="text" name="effort" style="width:250px;" disabled>
+                </div>
+                <br>
+                <div class="form-row">
+                    <label>Duration: </label>
+                    <input type="text" name="duration" style="width:250px;" disabled>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script2.js"></script>
+
+</body>
+
+</html>

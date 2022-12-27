@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="form">
+
+        <h3>COCOMO Basic</h3>
+
+        <form name="InputArea">
+            <div class="column">
+                <div class="form-row">
+                    <label for="username">Project type:</label>
+                    <div class="custom-select" style="width:200px;">
+                        <select id="type">
+                            <option value="0">Select</option>
+                            <option value="1">Organic</option>
+                            <option value="2">Semidetached</option>
+                            <option value="3">Embedded</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>KLOC:</label>
+                    <input type="text" name="KLOCEntry" onchange="KLOCValidate()">
+                </div>
+                <input type="button" name="CalculateButton" value="Calculate" onClick="updateDisplay()">
+            </div>
+        </form>
+
+        <form NAME="DisplayArea">
+            <div class="column">
+
+                <div class="form-row">
+                    <label>Labor intensity: </label>
+                    <input name="effort" style="width:200px;" disabled>
+                </div>
+                <div class="form-row">
+                    <label>Duration: </label>
+                    <input name="duration" style="width:200px;" disabled>
+                </div>
+                <div class="form-row">
+                    <label>Developers: </label>
+                    <input name="developers" style="width:200px;" disabled>
+                </div>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
