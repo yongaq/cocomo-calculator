@@ -1,1 +1,0 @@
-export {ExpandMore as ExpandMoreIcon} from '@mui/icons-material';
